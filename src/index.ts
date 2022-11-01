@@ -1,5 +1,6 @@
-import { addUser, pass2DataVariants } from "./unionInterfaces";
-import { Users } from "./unionInterfacesType";
+import { pass2DataVariants } from "./generics/generics";
+import { addUser } from "./unionInterface/unionInterfaces";
+import { Users } from "./unionInterface/unionInterfacesType";
 
 let users: Users = addUser({ name: "Jm", id: 1 });
 users = addUser({ name: "Jm", id: 1 });

@@ -1,9 +1,10 @@
-const favoriteFruits: string[] = ["apple", "strawberry", "orange"];
+import { addUser, pass2DataVariants } from "./unionInterfaces";
+import { Users } from "./unionInterfacesType";
 
-function addFruit(fruit: string) {
-  favoriteFruits.push(fruit);
-}
+let users: Users = addUser({ name: "Jm", id: 1 });
+users = addUser({ name: "Jm", id: 1 });
 
-addFruit("Mango");
+console.log({ users });
 
-console.log({ favoriteFruits, test: "test" });
+const length: number = pass2DataVariants([]);
+console.log({ length });
